@@ -48,7 +48,6 @@ const entradas = [
       dias: 3,
       pratos: 5,
       orcamento: 20,
-      //pratos que pode cozinhar: [0] = custo, [1] = lucro
       pratosDisponiveis: [[2, 5], [18, 6], [1, 1], [3, 3], [2,3]],
     },
   ];
@@ -66,3 +65,5 @@ const entradas = [
     planejarCardapio(dias, pratosDisponiveis, orcamento);
     console.log('----------------------------------------');
   });
+
+  //TODO: Verificar na mão se a solução local retornada faz sentido. 
