@@ -13,8 +13,8 @@ function planejarCardapio(dias, pratos, orcamento) {
         //Greedy
         //Loop para escolher o prato com maior lucro possível dentro do orçamento disponível.
         for (let i = 0; i < pratos.length; i++) {
-            let custo = pratos[i][0]; // i = índice do prato, 0 = custo do prato
-            let lucro = pratos[i][1] * Math.pow(0.5, pratos[i][2] - 1); //considerando o número de vezes que o prato já foi feito, calculamos o lucro.
+            let custo = pratos[i][0]; // custo do prato
+            let lucro = pratos[i][1] * Math.pow(0.5, dia - 1); // lucro considerando o número de vezes que o prato já foi feito
 
             //Verifica se o prato pode ser escolhido e se o lucro é maior que o máximo lucro encontrado até agora.
             if (custo <= orcamento && lucro > lucroMaximo) {
@@ -29,7 +29,7 @@ function planejarCardapio(dias, pratos, orcamento) {
         if (pratoEscolhido !== -1) {
             orcamento -= pratos[pratoEscolhido][0]; // Subtrai o custo do prato escolhido do orçamento.
             lucroTotal += lucroMaximo; // Adiciona o máximo lucro possível ao lucro total.
-            cardapio.push(pratoEscolhido); //Finalmente, adicionamos um prato ao cardápio.
+            cardapio.push(pratoEscolhido + 1); // Adicionamos o prato ao cardápio (adicionamos +1 para corresponder aos números dos pratos).
         } else {
             cardapio.push(0); //Como mencionado anteriormente, se -1 inserimos como 0 no cardápio.
         }
