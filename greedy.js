@@ -56,3 +56,17 @@ const entradas = [
       pratosDisponiveis: [[2, 5], [18, 6], [1, 1], [3, 3], [2,3]],
     },
   ];
+
+  entradas.forEach(entrada => {
+    const { dias, pratos, orcamento, pratosDisponiveis } = entrada;
+    console.log(`Entrada:`);
+    console.log(`Dias: ${dias}`);
+    console.log(`Pratos: ${pratos}`);
+    console.log(`Orçamento: ${orcamento}`);
+    console.log(`Pratos disponíveis:`);
+    console.log(pratosDisponiveis);
+  
+    console.log(`Resultado:`);
+    planejarCardapio(dias, pratosDisponiveis, orcamento);
+    console.log('----------------------------------------');
+  });
