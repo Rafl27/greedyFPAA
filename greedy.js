@@ -39,3 +39,20 @@ function planejarCardapio(dias, pratos, orcamento) {
     console.log(lucroTotal.toFixed(1));
     console.log(cardapio.join(','));
 }
+
+const entradas = [
+    {
+      dias: 2,
+      pratos: 1,
+      orcamento: 5,
+      //pratos que pode cozinhar: [0] = custo, [1] = lucro
+      pratosDisponiveis: [[3, 5]],
+    },
+    {
+      dias: 3,
+      pratos: 5,
+      orcamento: 20,
+      //pratos que pode cozinhar: [0] = custo, [1] = lucro
+      pratosDisponiveis: [[2, 5], [18, 6], [1, 1], [3, 3], [2,3]],
+    },
+  ];
