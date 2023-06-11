@@ -34,6 +34,9 @@ function planejarCardapio(dias, pratos, orcamento) {
             cardapio.push(0); //Como mencionado anteriormente, se -1 inserimos como 0 no cardápio.
         }
     }
+     // Imprime o lucro total e o cardápio
+    console.log("Lucro total: " + lucroTotal.toFixed(1));
+    console.log("Cardápio: " + cardapio.join(','));
 }
 
 const entradas = [
