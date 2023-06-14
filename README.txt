@@ -1,3 +1,7 @@
+//Autores: Glenda Faria, Gabriel Hirano, Rubens Euleutério, Rafael Campos
+//Versão: 1.4
+//Data: 15/06/2023
+
 -------Descrição da solução-------
 
 -Primeira entrada:
@@ -26,7 +30,7 @@ Cardápio: 5,2,0
 
 Nesse caso o lucro foi 8.5 e cardápio foi o prato 5 no primeiro dia, o prato 2 no segundo dia e nenhum prato no terceiro dia. Diferente do primeira entrada, temos mais pratos disponíveis, o prato 5 tem o melhor custo-benefício para o primeiro dia, o prato 2 tem o melhor custo-benefício para o segundo dia, mais uma vez não temos pratos dentro do orçamento para o terceiro dia.
 
--------Modelagem do paradigma guloso.-------
+1. -------Como esse problema pode ser modelado para o paradigma guloso?-------
 
 Precisamos escolher o prato com o maior lucro possível para cada dia, sempre verificando o orçamento disponível.
 
@@ -53,4 +57,5 @@ Como o algoritmo funciona?
     D. Caso contrário, adicionar 0 ao cardápio para indicar que nenhum prato foi escolhido para o dia.
 8. Finalmente, é retornado o lucro total e o cardápio final.
 
-O algoritmo guloso não considera uma solução ótima global, mas por meio de escolhas ótimas locais, que aparentam ser as melhores em cada passo, ele consegue achar uma solução rapidamente e muitas das vezes satisfatória.
+
+2.O algoritmo guloso não considera uma solução ótima global, mas por meio de escolhas ótimas locais, que aparentam ser as melhores em cada passo, ele consegue achar uma solução rapidamente e muitas das vezes satisfatória.
